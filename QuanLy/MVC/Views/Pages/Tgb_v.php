@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/hoanghuy/Deadline/Public/Css/seach10.css">
-    <link rel="stylesheet" href="/hoanghuy/73DCTT24_MVC%20-%20Copy/73DCTT24_MVC/Public/Css/bootstrap.min.css">
-    <link rel="stylesheet" href="/hoanghuy/73DCTT24_MVC%20-%20Copy/73DCTT24_MVC/Public/Css/dinhdang7.css">
+    <link rel="stylesheet" href="/hoanghuy/Deadline/Public/Css/bootstrap.min.css">
+    <link rel="stylesheet" href="/hoanghuy/Deadline/Public/Css/dinhdang7.css">
     <style>
         .dd2{
             width: 440px;
