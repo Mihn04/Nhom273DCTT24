@@ -98,11 +98,15 @@
 
             qrContainer.style.display = 'block';
 
-            const qrData = 'http://${QR_SERVER_IP}:3000/confirm';
-            QRCode.toCanvas(qrCodeElement, qrData, function(error) {
-                if (error) console.error(error);
-                console.log('QR Code generated!');
-            });
+            if (typeof QR_SERVER_IP !== 'undefined') {
+                const qrData = `http://${QR_SERVER_IP}:3000/confirm`;
+                QRCode.toCanvas(qrCodeElement, qrData, function (error) {
+                    if (error) console.error(error);
+                    console.log('QR Code generated with:', qrData);
+                });
+            } else {
+                console.error("QR_SERVER_IP is not defined.");
+            }
             const socket = io();
 
             socket.on('confirmed', function() {
