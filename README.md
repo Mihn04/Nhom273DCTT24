@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-Lưu ý: Để chạy ổn wed!!! 
->>>>>>> d9ec2f787c964d022bd84436c3b8fd2bb9d2a876
+Lưu ý: Để chạy ổn wed!!!! 
  
 Sửa file cấu hình: sudo vi /etc/php/php.ini 
 Di chuyển xuống đến Module Setting sửa dòng date.timezone(xóa dấu ; ở đẩu sau đó thêm “Asia/Ho_Chi_Minh” sau dấu =) 
