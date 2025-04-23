@@ -108,6 +108,7 @@
                 console.error("QR_SERVER_IP is not defined.");
             }
             if (typeof QR_SERVER_IP !== 'undefined') {
+                var form = document.getElementById('qr');
                 form.action = `http://${QR_SERVER_IP}/hoanghuy/qr-access/public/verify-card.php`;
             } else {
                 console.error("QR_SERVER_IP is not defined.");
@@ -117,7 +118,7 @@
 
             socket.on('confirmed', function() {
                 qrContainer.style.display = 'none';
-                form.submit();
+                document.getElementById('qr').submit();
             });
         });
         function huy(){
