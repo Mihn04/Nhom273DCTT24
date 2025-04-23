@@ -29,13 +29,9 @@
             <label >Điểm đi</label>
             <select name="ddi" class="form-control dd2">
             <?php
-                $servername = "localhost";
-                $username = "root";
-                $password = "";
-                $dbname = "quanly1";
-    
-                // Tạo kết nối
-                $conn = new mysqli($servername, $username, $password, $dbname);
+                require_once 'MVC/Core/connectDB1.php';
+                $db = new connectDB1();
+                $conn = $db->getConnection();
     
                 
                     $ss=$row1['DiemDi'];
@@ -71,13 +67,9 @@
             <label >Điểm Đến</label>
             <select name="dde" class="form-control dd2">
             <?php
-                $servername = "localhost";
-                $username = "root";
-                $password = "";
-                $dbname = "quanly1";
-    
-                // Tạo kết nối
-                $conn = new mysqli($servername, $username, $password, $dbname);
+                require_once 'MVC/Core/connectDB1.php';
+                $db = new connectDB1();
+                $conn = $db->getConnection();
                
                     $ss=$row1['DiemDen'];
                 
