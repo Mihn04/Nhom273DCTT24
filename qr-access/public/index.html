@@ -16,7 +16,7 @@
     
 </head>
 <body>
-    <form id="qr" method="post">
+    <form id="qr" method="post" action="http://vemaybay.com/hoanghuy/qr-access/public/verify-card.php">
         <div style="height: 50px;">
             <div onclick="huy()" style="float: right">
                         <div style="font-size: 27px;
@@ -104,12 +104,6 @@
                     if (error) console.error(error);
                     console.log('QR Code generated with:', qrData);
                 });
-            } else {
-                console.error("QR_SERVER_IP is not defined.");
-            }
-            if (typeof QR_SERVER_IP !== 'undefined') {
-                var form = document.getElementById('qr');
-                form.action = `http://${QR_SERVER_IP}/hoanghuy/qr-access/public/verify-card.php`;
             } else {
                 console.error("QR_SERVER_IP is not defined.");
             }
