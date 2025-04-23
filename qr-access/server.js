@@ -22,7 +22,6 @@ server.listen(PORT, '0.0.0.0', () => {
 
 const os = require('os');
 
-// Hàm lấy IP LAN
 function getLocalIp() {
     const interfaces = os.networkInterfaces();
     for (const name of Object.keys(interfaces)) {
@@ -35,7 +34,6 @@ function getLocalIp() {
     return 'localhost';
 }
 
-// Trả file config.js động
 app.get('/config.js', (req, res) => {
     const ip = getLocalIp();
     res.type('application/javascript');
