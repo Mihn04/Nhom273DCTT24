@@ -9,5 +9,5 @@ Cài đặt Node.js
 curl -sL https://rpm.nodesource.com/setup_16.x | sudo bash -  
 sudo yum install -y nodejs  
 Sau đó  
-cd /var/www/html/hoanghuy/qr-access  
+cd /var/www/vemaybay/hoanghuy/qr-access  
 Rồi nhập node server.js 
